@@ -11,6 +11,14 @@
 
 ---
 
+## 🚀 Évolutions futures (V2)
+
+- **Filtres multi-critères** : Tri par arrondissement ou gestionnaire avec badges de sélection interactifs.
+- **Vue carte interactive** : Afficher la liste des résultats sur une carte interactive.
+- **Gestion de favoris** : Système de favoris pour sauvegarder des jardins préférés en local (LocalStorage) et d'une page dédiée.
+
+---
+
 ## 🛠️ Stack technique
 
 - **Langages** : HTML5 / CSS3 / JavaScript (Vanilla)
