@@ -11,7 +11,7 @@
 
 ---
 
-## 🛠️ Stack Technique
+## 🛠️ Stack technique
 
 - **Langages** : HTML5 / CSS3 / JavaScript (Vanilla)
 - **Bundler** : Vite
@@ -21,17 +21,7 @@
 
 ---
 
-## 🚀 Lancer le projet en local
-
-Ne faites pas l'erreur de le lancer avec Node directement ! Passez par le serveur Vite intégré :
-
-1. Installez les dépendances (à ne faire qu'à la première ouverture) : npm install
-2. Lancez le serveur de développement : npm run dev
-3. Ouvrez votre navigateur sur l'adresse locale générée (généralement http://localhost:5173).
-
----
-
-## 📂 Structure du Projet
+## 📂 Structure
 
 - index.html (Page principale : Liste des jardins)
 - main.js (Logique principale : Fetch API, manipulation du DOM)
