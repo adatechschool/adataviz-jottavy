@@ -1,26 +1,23 @@
 # 🌿 Les Jardins Partagés de Paris
 
-> Un site vitrine dynamique pour explorer, filtrer et adopter les coins de verdure parisiens.
+> Un site vitrine dynamique pour explorer et éventuellement rejoindre ces coins de verdure parisiens.
 
 ---
 
 ## ✨ Fonctionnalités
 
-- **🃏 Cartes dynamiques** : Liste des jardins avec détails dépliables (gestionnaire, contacts, etc.).
-- **🔢 Compteur en temps réel** : Affichage dynamique du nombre de jardins récupérés via l'API.
-- **🎛️ Filtres multi-critères** : Tri par arrondissement ou gestionnaire avec badges de sélection interactifs.
-- **❤️ Gestion de favoris** : Système de coup de cœur pour sauvegarder vos jardins préférés.
-- **📖 Navigation fluide** : Une page principale et une page dédiée "Mes jardins favoris".
+- **Cartes dynamiques** : Liste des jardins avec détails dépliables (gestionnaire, contacts, etc.).
+- **Compteur en temps réel** : Affichage dynamique du nombre de jardins récupérés en direct via l'API.
 
 ---
 
 ## 🛠️ Stack Technique
 
 - **Langages** : HTML5 / CSS3 / JavaScript (Vanilla)
-- **Outils & Bundler** : Vite (Serveur de dev ultra-rapide)
-- **Design & Polices** :
-  - Font Awesome 4.7 pour les icônes.
-  - Polices Eczar & Work Sans via Google Fonts.
+- **Bundler** : Vite
+- **Icons & Fonts** :
+  - Font Awesome 4.7 pour les icônes
+  - Polices Eczar & Work Sans via Google Fonts
 
 ---
 
@@ -36,8 +33,7 @@ Ne faites pas l'erreur de le lancer avec Node directement ! Passez par le serveu
 
 ## 📂 Structure du Projet
 
-- index.html (Page principale : Liste et filtres)
-- favoris.html (Page secondaire : Vos coups de cœur)
-- src/main.js (Logique principale : Fetch API, manipulation du DOM)
-- src/utils.js (Fonctions outils : Formatage texte, calculs du compteur)
-- src/style.css (Styles et habillage graphique)
+- index.html (Page principale : Liste des jardins)
+- main.js (Logique principale : Fetch API, manipulation du DOM)
+- utils.js (Fonctions outils : Formatage texte, calculs du compteur etc.)
+- style.css (Style graphique)
