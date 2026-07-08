@@ -1,24 +1,33 @@
 // Fetch + manipulation du DOM (pas testé)
 
-// imports
-
+// Imports
 // import './style.css';
-import { texteCompteur } from './util'; 
+import { texteCompteur, creerCarte } from './utils.js'; 
 
-const afficherCompteurHTML = (combienAffiches, total) => {
+// Fonction d'affichage du texte compteur
+const afficherTexteCompteur = (combienAffiches, total) => {
   const elementCompteur = document.querySelector('.results-count');
   
-  // 🎯 On utilise l'outil pour obtenir le texte parfait
-  elementCompteur.textContent = texteCompteurexteCompteur(combienAffiches, total);
+  elementCompteur.textContent = texteCompteur(combienAffiches, total);
+  // console.log(`Texte compteur affiché : ${elementCompteur.textContent}`);
 };
 
+// Fonction pour charger les données depuis l'API et créer les cartes
 const chargerDonnees = async () => {
   try {
     const data = await fetch('https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/jardins-partages/records?limit=20');
     if (!data.ok) throw new Error(`Le serveur de Paris a répondu avec un code ${data.status}`);
     const response = await data.json();
+    console.table(response.results);
     
-    afficherCompteurHTML(response.results.length, response.total_count);
+    // Charge les données du compteur dans le DOM
+    afficherTexteCompteur(response.results.length, response.total_count);
+
+    // Crée les cartes pour chaque jardin
+    const listeJardins = response.results; 
+    listeJardins.forEach(jardin => {
+      creerCarte(jardin);
+    });
 
   } catch (error) {
     console.error("Échec :", error.message);
