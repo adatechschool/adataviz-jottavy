@@ -1,6 +1,6 @@
 # 🌿 Les Jardins Partagés de Paris
 
-> Un site vitrine dynamique pour explorer et éventuellement rejoindre ces coins de verdure parisiens.
+> Site vitrine dynamique pour explorer et éventuellement rejoindre ces coins de verdure parisiens.
 
 ---
 
