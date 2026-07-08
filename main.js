@@ -2,7 +2,7 @@
 
 // Imports
 // import './style.css';
-import { texteCompteur, creerCarte } from './utils.js'; 
+import { texteCompteur, creerCarte, formaterNom, formaterAnim, formaterArr } from './utils.js'; 
 
 // Fonction d'affichage du texte compteur
 const afficherTexteCompteur = (combienAffiches, total) => {
@@ -24,8 +24,8 @@ const chargerDonnees = async () => {
     afficherTexteCompteur(response.results.length, response.total_count);
 
     // Crée les cartes pour chaque jardin
-    const listeJardins = response.results; 
-    listeJardins.forEach(jardin => {
+    const listeCartes = response.results; 
+    listeCartes.forEach(jardin => {
       creerCarte(jardin);
     });
 

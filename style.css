@@ -97,11 +97,16 @@ main {
 }
 
 .favorites a {
-  color: var(--text-dark);
+  color: var(--green);
   text-decoration: none;
 }
 
+.favorites i {
+  color: var(--green);
+}
+
 .favorites a:hover {
+  color: var(--green-dark);
   text-decoration: underline;
 }
 
@@ -409,15 +414,16 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .card-info a {
-  color: var(--text-dark);
+  color: var(--green);
   text-decoration: none;
 }
 
 .card-info a:hover {
+  color: var(--green-dark);
   text-decoration: underline;
 }
 
@@ -429,6 +435,7 @@ main {
   font-size: 15px;
   cursor: pointer;
   padding-top: 4px;
+  transition: color 0.15s ease;
 }
 
 .card-expanded {
