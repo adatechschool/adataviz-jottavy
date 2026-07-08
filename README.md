@@ -1,35 +1,43 @@
-# Les Jardins Partagés
+# 🌿 Les Jardins Partagés de Paris
 
-Site vitrine listant les jardins partagés de Paris, avec recherche, filtres et gestion de favoris.
+> Un site vitrine dynamique pour explorer, filtrer et adopter les coins de verdure parisiens.
 
-## Fonctionnalités
+---
 
-- Liste des jardins avec détails dépliables (surface, année d'ouverture, gestionnaire)
-- Filtres multi-critères (arrondissement, animateurs, distance) avec compteur de sélection
-- Ajout de jardins en favoris
-- Page dédiée "Mes jardins favoris"
+## ✨ Fonctionnalités
 
-## Stack technique
+- **🃏 Cartes dynamiques** : Liste des jardins avec détails dépliables (gestionnaire, contacts, etc.).
+- **🔢 Compteur en temps réel** : Affichage dynamique du nombre de jardins récupérés via l'API.
+- **🎛️ Filtres multi-critères** : Tri par arrondissement ou gestionnaire avec badges de sélection interactifs.
+- **❤️ Gestion de favoris** : Système de coup de cœur pour sauvegarder vos jardins préférés.
+- **📖 Navigation fluide** : Une page principale et une page dédiée "Mes jardins favoris".
 
-- HTML / CSS / JavaScript (vanilla)
-- [Vite](https://vitejs.dev/) comme serveur de développement et bundler
-- [Font Awesome 4.7](https://fontawesome.com/v4/) pour les icônes
-- Polices [Eczar](https://fonts.google.com/specimen/Eczar) et [Work Sans](https://fonts.google.com/specimen/Work+Sans) via Google Fonts
+---
 
-## Lancer le projet en local
+## 🛠️ Stack Technique
 
-```bash
-npm install
-npm run dev
-```
+- **Langages** : HTML5 / CSS3 / JavaScript (Vanilla)
+- **Outils & Bundler** : Vite (Serveur de dev ultra-rapide)
+- **Design & Polices** :
+  - Font Awesome 4.7 pour les icônes.
+  - Polices Eczar & Work Sans via Google Fonts.
 
-Puis ouvrir l'URL affichée dans le terminal (généralement `http://localhost:5173`).
+---
 
-## Structure du projet
+## 🚀 Lancer le projet en local
 
-├── index.html # Page principale : liste des jardins
-├── favoris.html # Page des jardins favoris
-├── src/
-│ ├── main.js # Logique JS (détails dépliables, badges de filtres)
-│ └── style.css # Styles du site
-└── README.md
+Ne faites pas l'erreur de le lancer avec Node directement ! Passez par le serveur Vite intégré :
+
+1. Installez les dépendances (à ne faire qu'à la première ouverture) : npm install
+2. Lancez le serveur de développement : npm run dev
+3. Ouvrez votre navigateur sur l'adresse locale générée (généralement http://localhost:5173).
+
+---
+
+## 📂 Structure du Projet
+
+- index.html (Page principale : Liste et filtres)
+- favoris.html (Page secondaire : Vos coups de cœur)
+- src/main.js (Logique principale : Fetch API, manipulation du DOM)
+- src/utils.js (Fonctions outils : Formatage texte, calculs du compteur)
+- src/style.css (Styles et habillage graphique)
