@@ -17,7 +17,7 @@
 - **Bundler** : Vite
 - **Icons & Fonts** :
   - Font Awesome 4.7 pour les icônes
-  - Polices Eczar & Work Sans via Google Fonts
+  - Eczar & Work Sans via Google Fonts
 
 ---
 
