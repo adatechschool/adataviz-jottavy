@@ -390,9 +390,16 @@ main {
 }
 
 .card-type {
-  color: var(--text-dark);
-  font-size: 14px;
-  font-weight: 400;
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: white;
+  border: 1px solid var(--border-light);
+  color: var(--texte-dark); 
+  font-size: 12px;
+  font-weight: 600;           
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 100px; 
   margin: 16px 0 12px;
 }
 
