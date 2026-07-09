@@ -2,7 +2,7 @@
 
 // Imports
 // import './style.css';
-import { texteCompteur, creerCarte, formaterNom, formaterAnim, formaterArr } from './utils.js'; 
+import { texteCompteur, creerCarte, formaterNom, formaterAnim, formaterArr, formaterProprio } from './utils.js'; 
 
 // Fonction d'affichage du texte compteur
 const afficherTexteCompteur = (combienAffiches, total) => {
