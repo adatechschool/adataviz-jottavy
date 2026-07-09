@@ -1,10 +1,10 @@
-# 🌿 Les Jardins Partagés de Paris
+# 🌿 Les Parcelliers
 
 > Site vitrine dynamique pour explorer et éventuellement rejoindre ces coins de verdure parisiens.
 
 ---
 
-## ✨ Fonctionnalités
+## ✨ Fonctionnalités (V1)
 
 - **Cartes dynamiques** : Liste des jardins avec détails dépliables (gestionnaire, contacts, etc.).
 - **Compteur en temps réel** : Affichage dynamique du nombre de jardins récupérés en direct via l'API.
@@ -25,13 +25,13 @@
 - **Bundler** : Vite
 - **Icons & Fonts** :
   - Font Awesome 4.7 pour les icônes
-  - Eczar & Work Sans via Google Fonts
+  - DM Sans & DM Mono via Google Fonts
 
 ---
 
 ## 📂 Structure
 
-- index.html (Page principale : Liste des jardins)
-- main.js (Logique principale : Fetch API, manipulation du DOM)
-- utils.js (Fonctions outils : Formatage texte, calculs du compteur etc.)
-- style.css (Style graphique)
+- `index.html` : Structure sémantique principale de l'application (header, panneau de filtres, grille de résultats, footer).
+- `main.js` : Point d'entrée de l'application (initialisation, requêtes Fetch asynchrones, gestion globale).
+- `utils.js` : Fonctions utilitaires, formatage des données JSON (noms, arrondissements etc.) et fonction de création dynamique des cartes (`creerCarte`).
+- `style.css` : Charte graphique, mise en page responsive.
