@@ -2,15 +2,15 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 :root {
-  --bg-cream: #f4f1ea;
-  --bg-grey-input: #eeeeee;
+  --bg-cream: #f2f1ed;
+  --bg-grey-input: #e8e7e2;
   --white: #ffffff;
-  --text-dark: #14231c;
-  --text-gray: #6b6b6b;
-  --green: #4a7c59;
-  --green-dark: #3a6247;
-  --red-heart: #e2624b;
-  --border-light: #e0dcd0;
+  --text-dark: #1a1a1a;
+  --text-gray: #6f6f6f;
+  --green: #3d9970;
+  --green-dark: #2d7355;
+  --red-heart: #ff6b4a;
+  --border-light: #dedcd4;
   --shadow: rgba(0, 0, 0, 0.06);
 }
 
@@ -36,7 +36,6 @@ h1, h3, .brand {
   font-family: 'Rethink Sans', sans-serif;
 }
 
-/* Header */
 header {
   background: var(--white);
   display: flex;
@@ -71,7 +70,6 @@ header {
   cursor: pointer;
 }
 
-/* Main content */
 main {
   flex: 1 0 auto;
   padding: 40px 48px 80px;
