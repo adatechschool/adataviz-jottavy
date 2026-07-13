@@ -1,8 +1,8 @@
-// Fetch + manipulation du DOM (pas testé)
+// Fetch + manipulation du DOM
 
 // Imports
 // import './style.css';
-import { texteCompteur, creerCarte, formaterNom, formaterAnim, formaterArr, formaterProprio } from './utils.js'; 
+import { texteCompteur, creerCarte } from './utils.js'; 
 
 // Fonction d'affichage du texte compteur
 const afficherTexteCompteur = (combienAffiches, total) => {
@@ -13,15 +13,16 @@ const afficherTexteCompteur = (combienAffiches, total) => {
 };
 
 // Fonction pour charger les données depuis l'API et créer les cartes
+
 const chargerDonnees = async () => {
   try {
     const data = await fetch('https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/jardins-partages/records?limit=20');
-    if (!data.ok) throw new Error(`Le serveur de Paris a répondu avec un code ${data.status}`);
-    const response = await data.json();
-    console.table(response.results);
+    if (!data.ok) throw new Error(`Le serveur de Paris a répondu avec un code ${data.status}`); // aide de l'IA pour le throw, veut dire "on saute tout le try et on va direct dans le catch" - gère le cas d'erreurs connues (404 )
+    const response = await data.json(); // Je transforme ensuite la réponse JSON en objet JavaScript
+    // console.table(response.results);
     
     // Charge les données du compteur dans le DOM
-    afficherTexteCompteur(response.results.length, response.total_count);
+    afficherTexteCompteur(response.results.length, response.total_count); // combienAffiches = response.results.length, total = response.total_count
 
     // Crée les cartes pour chaque jardin
     const listeCartes = response.results; 
@@ -30,11 +31,11 @@ const chargerDonnees = async () => {
     });
 
   } catch (error) {
-    console.error("Échec :", error.message);
+    console.error("Échec :", error.message); // gère les cas d'erreurs venant de l'API
   }
 };
 
-chargerDonnees();
+chargerDonnees(); // Au chargement de la page, requête HTTP GET vers l'API
 
 // document.querySelectorAll('.heart-btn').forEach(btn => {
 //   btn.addEventListener('click', () => {

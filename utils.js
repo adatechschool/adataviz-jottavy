@@ -182,9 +182,9 @@ export const creerCarte = (jardin) => {
 
   const ctaButton = document.createElement('a');
   ctaButton.classList.add('cta-button');
-  const lat = jardin.geo_point_2d?.lat || 48.8566;
+  
+  const lat = jardin.geo_point_2d?.lat || 48.8566; // aide de l'IA, on récupère les données seulement si elles existent, si on met les coordonnées par défaut
   const lon = jardin.geo_point_2d?.lon || 2.3522;
-  ctaButton.href = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
   console.log("Mes coordonnées extraites :", lat, lon);
   ctaButton.target = '_blank';
   ctaButton.rel = 'noopener';

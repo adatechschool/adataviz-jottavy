@@ -245,7 +245,6 @@ main {
   content: '';
 }
 
-/* Badge : compteur du nombre d'options cochées, mis à jour en JS */
 .filter-select .badge-count {
   display: none;
   align-items: center;
@@ -324,7 +323,6 @@ main {
   text-decoration: underline;
 }
 
-/* Cards grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -480,7 +478,6 @@ main {
   cursor: pointer;
   font-family: 'Rethink Sans', sans-serif;
   transition: background 0.15s ease;
-  box-sizing: border-box;
 }
 
 .cta-button:hover {
